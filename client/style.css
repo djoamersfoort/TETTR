@@ -1,0 +1,64 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3D5A80;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #98C1D9;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidebar a:hover {
+    color: #CAE3E4;
+
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #98C1D9;
+    color: black;
+    padding: 10px 15px;
+    margin: 0px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #CAE3E4;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
