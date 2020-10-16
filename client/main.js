@@ -1,9 +1,8 @@
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+function setup() {
+    createCanvas(400,400);
 }
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
+function draw() {
+    background(220);
+    ellipse(50, 50, 50);
+}
